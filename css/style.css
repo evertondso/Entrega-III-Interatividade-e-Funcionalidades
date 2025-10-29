@@ -36,8 +36,8 @@
     body {
     font-family: var(--fonte-principal), 'Times New Roman', Times, serif;
     line-height: 1.8;
-    background: linear-gradient(180deg, #8fa2f5 0%, #2533d3 100%);
-    color: #1f6ce7;
+    background: linear-gradient(180deg, #a6b5f8 0%, #2533d3 100%);
+    color: #0e62cf;
     padding: 5px;
 }
 
