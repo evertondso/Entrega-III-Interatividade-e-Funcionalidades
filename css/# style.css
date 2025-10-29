@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+
+  --cor-primaria: #116c37;      
+  --cor-secundaria: #7bf87b;    
+  --cor-terciaria: #e5e6e5;     
+  --cor-quaternaria: #1ea329;   
+  --cor-texto: #070707;         
+  --cor-fundo: #ffffff;         
+  --cor-alerta: #ff4c4c;        
+  --cor-sucesso: #4caf50;       
+  --cor-info: #2196f3;          
+
+  --fonte-principal: 'Montserrat', sans-serif;
+  --fonte-titulo: 2.5rem;  
+  --fonte-subtitulo: 2rem;
+  --fonte-secao: 1.5rem;
+  --fonte-corpo: 1rem;
+  --fonte-pequena: 0.875rem;
+
+  --espaco-pequeno: 8px;
+  --espaco-medio: 16px;
+  --espaco-grande: 32px;
+  --espaco-extra: 48px;
+  --espaco-max: 64px;
+
+  --fonte-titulo: 2.5rem;
+  --fonte-subtitulo: 2rem;
+  --fonte-secao: 1.5rem;
+  --fonte-corpo: 1rem;
+  --fonte-pequena: 0.875rem;
+}
+    body {
+    font-family: var(--fonte-principal), 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    background: linear-gradient(180deg, #8fa2f5 0%, #2533d3 100%);
+    color: #1f6ce7;
+    padding: 5px;
+}
+
+    header h1 {
+    display: flex;
+    margin: 10px 0;
+    font-size: 2em;
+    color: #eaedf5;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
+}
+header h1 {
+    margin: 0;
+}
+nav a {
+    color: #e3e8f8;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}   
+nav ul {
+    list-style: none;  
+    padding: 0;        
+    margin: 0;         
+    display: flex;     
+}
+
+nav li {
+    display: inline-block;  
+    margin-right: 20px;
+
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+@media (max-width: 1200px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+@media (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+@media (max-width: 360px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+section {
+    background-color: #dce9f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+} 
+.imagem-pequena img {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);  
+    transition: transform 0.3s ease;      
+}
+.imagem-pequena img:hover {
+    transform: scale(1.05);
+}
+
+.imagem-grande img {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+.imagem-grande img:hover {
+    transform: scale(1.05);
+}
+input:valid {
+  border: 2px solid var(--cor-sucesso);
+}
+
+input:invalid {
+  border: 2px solid var(--cor-alerta);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--cor-info);
+}
+
+button {
+  background: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background: var(--cor-quaternaria);
+}
+.alert {
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-weight: 500;
+  text-align: center;
+}
+.sucesso {
+  background-color: var(--cor-sucesso);
+  color: #f9eeee;
+}
+.erro {
+  background-color: var(--cor-alerta);
+  color: #fff;
+}
+
+
+.card {
+  background: var(--cor-fundo); 
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  max-width: 300px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: var(--fonte-secao);
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: var(--fonte-corpo);
+  margin-bottom: 10px;
+}
+
+.card .badge {
+  display: inline-block;
+  background: var(--cor-primaria);
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: var(--fonte-pequena);
+  margin-bottom: 10px;
+}
+
+.card button {
+  background: var(--cor-secundaria);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background: var(--cor-quaternaria);
+}
+.form-cadastro {
+  background: var(--cor-terciaria);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  color: var(--cor-texto);
+  font-family: var(--fonte-principal);
+}
+
+.form-cadastro fieldset {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-cadastro legend {
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.form-cadastro label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: var(--cor-texto);
+}
+
+.form-cadastro input,
+.form-cadastro select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: var(--fonte-corpo);
+  color: var(--cor-texto);
+  background: #fff;
+}
+
+.form-cadastro input::placeholder,
+.form-cadastro select::placeholder {
+  color: #999;
+}
+
+.form-cadastro .botoes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.form-cadastro button {
+  background: var(--cor-primaria);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: var(--fonte-corpo);
+  transition: 0.3s ease;
+}
+
+.form-cadastro button:hover {
+  background: var(--cor-quaternaria);
+}
+
+.form-cadastro input:valid {
+  border: 2px solid var(--cor-sucesso);
+}
+
+.form-cadastro input:invalid {
+  border: 2px solid var(--cor-alerta);
+}
+
+.form-cadastro input:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--cor-info);
+}
+
+
+
