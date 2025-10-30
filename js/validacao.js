@@ -1,6 +1,4 @@
-// js/validacao.js (CÓDIGO COMPLETO E CORRETO PARA SPA)
 
-// 1. Funções de Validação Pura (Exportadas)
 export function validarEmail(email) {
     const regex = /^\S+@\S+\.\S+$/;
     return regex.test(email);
