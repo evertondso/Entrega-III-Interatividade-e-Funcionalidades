@@ -15,3 +15,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.insertAdjacentHTML('beforeend', '<p style="color:red">Erro ao carregar conteúdo. Veja console.</p>');
   }
 });
+

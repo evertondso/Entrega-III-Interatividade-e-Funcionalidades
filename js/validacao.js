@@ -23,13 +23,11 @@ export function setupFormValidation() {
         cpfInput.addEventListener('input', aplicarMascaraCPF); 
     }
 
-    // Lógica da Máscara de Telefone
     if (telefoneInput) {
         telefoneInput.removeEventListener('input', aplicarMascaraTelefone);
         telefoneInput.addEventListener('input', aplicarMascaraTelefone);
     }
     
-    // Lógica de Submissão do Formulário
     if (form) {
         form.removeEventListener("submit", lidarComSubmissao);
         form.addEventListener("submit", lidarComSubmissao);
@@ -60,7 +58,6 @@ function aplicarMascaraTelefone(e) {
     }
     e.target.value = value.trim();
 }
-
 
 function lidarComSubmissao(event) {
     event.preventDefault();
