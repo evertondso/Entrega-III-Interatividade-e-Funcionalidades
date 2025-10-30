@@ -156,7 +156,7 @@ export const templateCadastro = `
     <section>
         <h2>Contato com a ONG</h2>
         <address>
-            <p>Endereço: Rua Adamantina, 45 Bairro jacupiara/PR</p>
+            <p>Endereço:  Rua Adamantina, 45 Bairro jacupiara/PR</p>
             <p>Telefone: (17)967848488</p>
             <p>Email: Contato@ONGCaminhouniao.org.br</p>
         </address>
