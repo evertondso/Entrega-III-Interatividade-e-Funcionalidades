@@ -28,23 +28,6 @@ Feedback ao usuário com mensagens de alerta e verificação de campos obrigató
 
 Código modularizado (arquivos separados por função).
 
-Estrutura de Pastas
-Entrega-III-Interatividade-e-Funcionalidades/
-│
-├── index.html
-├── css/
-│   └── style.css
-├── imagens/
-│   ├── Caminho União Logo Design.png
-│   ├── crianca_escola.png
-│   ├── crianca_feliz.PNG.png
-│   └── voluntarios.png
-└── js/
-    ├── main.js
-    ├── spa.js
-    ├── template.js
-    └── validacao.js
-
 Tecnologias Utilizadas
 
 HTML5
