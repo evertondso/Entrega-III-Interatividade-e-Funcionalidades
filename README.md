@@ -50,17 +50,6 @@ O arquivo validacao.js adiciona máscaras e validações ao formulário de cadas
 
 Como Executar o Projeto
 
-Baixe ou clone o repositório:
-
-git clone https://github.com/evertondso/Entrega-III-Interatividade-e-Funcionalidades.git
-
-
-Abra o projeto no VS Code.
-
-Clique com o botão direito no arquivo index.html e selecione "Open with Live Server".
-
-Navegue entre as seções usando o menu superior.
-
 Autor
 
 Everton D. S. O.
