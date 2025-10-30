@@ -1,39 +1,52 @@
+// js/validacao.js (CÓDIGO COMPLETO E CORRETO PARA SPA)
 
 export function validarEmail(email) {
     const regex = /^\S+@\S+\.\S+$/;
     return regex.test(email);
 }
 export function validarCPF(cpf) {
+    // Verifica o formato 000.000.000-00
     const regex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
     return regex.test(cpf);
 }
 export function validarTelefone(telefone) {
+    // Verifica o formato (99) 99999-9999 ou (99) 9999-9999
     const regex = /^\(\d{2}\) \d{4,5}-\d{4}$/;
     return regex.test(telefone);
 }
 
-xport function setupFormValidation() {
+// ----------------------------------------------------------------------
+// 2. Função de SETUP: O coração da organização e reativação da SPA
+// ----------------------------------------------------------------------
+export function setupFormValidation() {
     
+    // Pega as referências dos NOVOS elementos que acabaram de ser injetados
     const cpfInput = document.querySelector('#cpf');
     const telefoneInput = document.querySelector('#telefone');
     const form = document.querySelector("#cadastroForm");
 
+    // Lógica da Máscara de CPF
     if (cpfInput) {
         cpfInput.removeEventListener('input', aplicarMascaraCPF); 
         cpfInput.addEventListener('input', aplicarMascaraCPF); 
     }
 
+    // Lógica da Máscara de Telefone
     if (telefoneInput) {
         telefoneInput.removeEventListener('input', aplicarMascaraTelefone);
         telefoneInput.addEventListener('input', aplicarMascaraTelefone);
     }
     
+    // Lógica de Submissão do Formulário
     if (form) {
         form.removeEventListener("submit", lidarComSubmissao);
         form.addEventListener("submit", lidarComSubmissao);
     }
 }
 
+// ----------------------------------------------------------------------
+// 3. Funções de Callback (Lógica da Máscara)
+// ----------------------------------------------------------------------
 
 function aplicarMascaraCPF(e) {
     let value = e.target.value.replace(/\D/g, '');
