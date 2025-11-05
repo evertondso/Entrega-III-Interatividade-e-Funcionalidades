@@ -89,7 +89,8 @@ export const templateProjetos = `
 
     <section id="doacoes">
         <h2>💰 Como Doar e Fazer a Diferença</h2>
-        </section>
+        <p>Para fazer doações, por favor <a href="#/cadastro" class="link-Cadastro">cadastre-se primeiro</a>.</p>
+    </section>
 `;
 
 
